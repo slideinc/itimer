@@ -140,13 +140,13 @@ static PyMethodDef itimer_methods[] = {
 /* Initialization function for the module (*must* be called initxx) */
 
 DL_EXPORT(void)
-init_itimer(void)
+inititimer(void)
 {
 	PyObject *m, *d;
 	PyObject *v;
 
 	/* Create the module and add the functions */
-	m = Py_InitModule3("_itimer", itimer_methods, module_doc);
+	m = Py_InitModule3("itimer", itimer_methods, module_doc);
 
 	/* Add some symbolic constants to the module */
 	d = PyModule_GetDict(m);

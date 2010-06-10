@@ -11,9 +11,8 @@ setup(
     name="itimer",
     description="alarm signal delivery with setitimer(2) and getitimer(2)",
     version="1.0",
-    py_modules=['itimer'],
     ext_modules=[Extension(
-        '_itimer',
+        'itimer',
         ['itimermodule.c'],
         include_dirs=('.',),
         extra_compile_args=['-Wall'])],
