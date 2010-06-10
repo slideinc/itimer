@@ -11,6 +11,7 @@ setup(
     name="itimer",
     description="alarm signal delivery with setitimer(2) and getitimer(2)",
     version="1.0",
+    license="bsd",
     ext_modules=[Extension(
         'itimer',
         ['itimermodule.c'],
@@ -19,7 +20,7 @@ setup(
     classifiers = [
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
-        #"License :: OSI Approved :: BSD License",
+        "License :: OSI Approved :: BSD License",
         "Natural Language :: English",
         "Operating System :: Unix",
         "Programming Language :: C",
