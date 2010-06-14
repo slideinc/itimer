@@ -12,6 +12,8 @@ setup(
     description="alarm signal delivery with setitimer(2) and getitimer(2)",
     version="1.0",
     license="bsd",
+    author="Libor Michalek",
+    author_email="libor@pobox.com",
     ext_modules=[Extension(
         'itimer',
         ['itimermodule.c'],
